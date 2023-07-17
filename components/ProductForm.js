@@ -244,7 +244,7 @@ export default function ProductForm({
     );
     setUploadData(data.data);
     setImages_url(data.data.secure_url);
-    setImages_asset_id(data.data.asset_id);
+    setImages_asset_id(data.data.asset_id); 
     
     console.log(data);
     toast.success(`image/file is addeded successfully`, {
@@ -473,7 +473,7 @@ export default function ProductForm({
         type="text"
         placeholder="images_asset_id. NOTE: This is automatically generated! Please, donot type/write anything here!"
         value={images_asset_id}
-        onChange={(event) => setImages_url(event.target.value)}
+        onChange={(event) => setImages_asset_id(event.target.value)}
       />
       <button type="button" onClick={saveProduct} className="btn-primary cursor:pointer text-blue-900 w-17 h-20">
         Save Product Details
