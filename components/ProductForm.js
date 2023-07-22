@@ -51,6 +51,7 @@ export default function ProductForm({
     });
   }, []);
 
+  //Retrieving the
   function fetchCategoy_Properties() {
     axios.get("/api/categoryproperties").then((result) => {
       setCategory_properties(result.data);
