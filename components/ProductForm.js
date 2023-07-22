@@ -41,6 +41,7 @@ export default function ProductForm({
 
   const router = useRouter();
 
+  //use effect 
   useEffect(() => {
     axios.get("/api/categories").then((result) => {
       setCategories(result.data);
