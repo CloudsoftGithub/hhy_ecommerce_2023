@@ -61,7 +61,7 @@ export default function ProductForm({
   async function saveProduct(e) {
     e.preventDefault();
 
-   if(!title || !description || !price ||!category || !catProperties || !images_url || !noInstock || !images_asset_id) {
+   if(!title || !description || !price ||!category || !catProperties || !images_url || !noInstock) {
 
      // res.status(422).json({error:"Please add all the fields"})
       toast.error(`Please, fill in all fields. They are important!`, {
@@ -228,6 +228,7 @@ export default function ProductForm({
   async function handleOnSubmit(event) {
     event.preventDefault();
     const form = event.currentTarget;
+    
     const fileInput = Array.from(form.elements).find(
       ({ name }) => name === "file"
     );
