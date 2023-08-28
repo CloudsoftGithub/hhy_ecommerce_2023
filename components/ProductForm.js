@@ -64,7 +64,7 @@ export default function ProductForm({
    if(!title || !description || !price ||!category || !catProperties || !images_url || !noInstock) {
 
      // res.status(422).json({error:"Please add all the fields"})
-      toast.error(`Please, fill in all fields. They are important!`, {
+      toast.error(`Please, fill in all fields. They are important FIELDS!`, {
         position: toast.POSITION.TOP_RIGHT,
       });
       
